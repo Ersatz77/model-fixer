@@ -1,0 +1,10 @@
+# Workspace files
+.vscode/
+*.code-workspace
+
+dev/
+
+# Python venvs and caches
+**/__pycache__
+venv/
+.venv/
