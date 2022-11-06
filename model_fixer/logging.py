@@ -11,7 +11,7 @@ LOG_COLORS = {
 }
 
 
-def setup_logging(level: Union[int, str] = logging.WARNING):
+def setup_logging(level: Union[int, str] = logging.INFO):
     log_handeler = logging.StreamHandler()
 
     # Try to add a colorlog formatter

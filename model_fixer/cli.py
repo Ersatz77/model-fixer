@@ -49,10 +49,10 @@ def run():
             model.try_fix_textures(path_prefix)
             model.to_file(model_file, indent)
 
-            log.info(f"Fixed {model_file.name}")
+            log.info(f"Fixed {model_file}")
 
         except KeyError as ex:
-            log.warning(f"Skipped {model_file.name}: '{ex.args[0]}' doesn't exist")
+            log.warning(f"Skipped {model_file}: The key '{ex.args[0]}' doesn't exist")
 
         except Exception as ex:
-            log.warning(f"Skipped {model_file.name}: {ex}")
+            log.warning(f"Skipped {model_file}: {ex}")
